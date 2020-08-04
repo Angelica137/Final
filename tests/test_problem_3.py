@@ -13,8 +13,12 @@ def test_convert_to__mandarin_returns_translation_one_digit():
     assert convert_to_mandarin('9') == 'jiu'
 
 
-def test_convert_to__mandarin_returns_translation_get_length():
+def test_convert_to__mandarin_returns_1_for_teens():
     assert convert_to_mandarin('11') == 1
+
+
+def test_convert_to__mandarin_returns_other_for_20_100():
+    assert convert_to_mandarin('31') == 'other'
 
 
 def test_convert_to__mandarin_returns_translation_two_digits_11():

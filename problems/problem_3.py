@@ -10,4 +10,6 @@ def convert_to_mandarin(us_num):
     if len(us_num) == 2:
         if us_num[0] == '1':
             return 1
+        else:
+            return 'other'
     return None
