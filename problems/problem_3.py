@@ -3,6 +3,10 @@ trans = {'0': 'ling', '1': 'yi', '2': 'er', '3': 'san', '4': 'si',
 
 
 def convert_to_mandarin(us_num):
+    '''
+    us_num, a string representing a US number 0 to 99
+    returns the string mandarin representation of us_num
+    '''
     if len(us_num) == 1:
         for key in trans:
             if key == us_num:
