@@ -9,6 +9,8 @@ def longest_run(L):
     Returns the sum of the longest run. 
     """
     for i in L:
-        if i + 1 >= i - 1:
-            return True
+        if i + 1 >= i:
+            return 'Increasing'
+        else:
+            return 'Decreasing'
     return None
