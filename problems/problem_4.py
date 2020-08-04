@@ -8,9 +8,17 @@ def longest_run(L):
     Does not modify the list.
     Returns the sum of the longest run. 
     """
-    for i in L:
-        if i + 1 >= i:
-            return 'Increasing'
+    longest_run = 0
+    for i in range(len(L)):
+        print(i)
+        if (i + 1) >= i:
+            longest_run += L[i]
         else:
+            # break
             return 'Decreasing'
-    return None
+    return longest_run
+
+
+print(longest_run([1, 2, 3, 4]))
+print(longest_run([4, 3, 2, 1]))
+print(longest_run([5, 4, 10]))
