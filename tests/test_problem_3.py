@@ -21,5 +21,9 @@ def test_convert_to__mandarin_returns_translation_two_digits_16():
     assert convert_to_mandarin('16') == 'shi liu'
 
 
+def test_convert_to__mandarin_returns_translation_two_digits_20():
+    assert convert_to_mandarin('20') == 'er shi'
+
+
 def test_convert_to__mandarin_returns_other_for_20_100():
     assert convert_to_mandarin('31') == 'other'

@@ -9,11 +9,11 @@ def convert_to_mandarin(us_num):
                 return trans[key]
     if len(us_num) == 2:
         if us_num[0] == '1':
-            # return ten + the second character
-            # get the second character
             for key in trans:
                 if key == us_num[1]:
                     return (trans['10'] + " " + trans[key])
-        else:
-            return 'other'
+        elif us_num[1] == '0':
+            for key in trans:
+                if key == us_num[0]:
+                    return (trans[key] + " " + trans['10'])
     return None
