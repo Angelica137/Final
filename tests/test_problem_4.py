@@ -13,3 +13,11 @@ def test_longest_run_returns_run_strictly_increasing_list():
 
 def test_longest_run_returns_run_non_monotonical():
     assert longest_run([5, 6, 5, 7]) == 11
+
+
+def test_longest_run_returns_run_decreasing():
+    assert longest_run([10, 9, 8, 7]) == 34
+
+
+def test_longest_run_returns_run_non_monotonic_long():
+    assert longest_run([10, 4, 3, 8, 3, 4, 5, 7, 7, 2]) == 26
