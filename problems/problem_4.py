@@ -8,11 +8,10 @@ def longest_run(L):
     Does not modify the list.
     Returns the sum of the longest run. 
     """
-    longest_run = 0
-    for i in range(len(L)):
-        print(i)
-        if (i + 1) >= i:
-            longest_run += L[i]
+    longest_run = L[0]
+    for i in range(len(L) - 1):
+        if L[i] <= L[i + 1]:
+            longest_run += L[i+1]
         else:
             # break
             return 'Decreasing'
@@ -20,5 +19,5 @@ def longest_run(L):
 
 
 print(longest_run([1, 2, 3, 4]))
-print(longest_run([4, 3, 2, 1]))
-print(longest_run([5, 4, 10]))
+#print(longest_run([4, 3, 2, 1]))
+#print(longest_run([5, 4, 10]))
