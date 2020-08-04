@@ -13,11 +13,10 @@ def longest_run(L):
         if L[i] <= L[i + 1]:
             longest_run += L[i+1]
         else:
-            # break
-            return 'Decreasing'
+            break
     return longest_run
 
 
-print(longest_run([1, 2, 3, 4]))
-#print(longest_run([4, 3, 2, 1]))
+print(longest_run([5, 6, 7, 8]))
+print(longest_run([5, 6, 5, 7]))
 #print(longest_run([5, 4, 10]))

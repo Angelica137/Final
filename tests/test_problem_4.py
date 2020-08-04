@@ -9,3 +9,7 @@ If L = [5, 4, 10] then the longest run of monotonically increasing numbers in L 
 
 def test_longest_run_returns_run_strictly_increasing_list():
     assert longest_run([5, 6, 7, 8]) == 26
+
+
+def test_longest_run_returns_run_non_monotonical():
+    assert longest_run([5, 6, 5, 7]) == 11
