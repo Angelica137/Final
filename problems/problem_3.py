@@ -16,4 +16,12 @@ def convert_to_mandarin(us_num):
             for key in trans:
                 if key == us_num[0]:
                     return (trans[key] + " " + trans['10'])
+        else:
+            translation = []
+            for char in range(len(us_num)):
+                for key in trans:
+                    if key == us_num[char]:
+                        translation.append(trans[key])
+        translation.insert(1, 'shi')
+        return " ".join(translation)
     return None
