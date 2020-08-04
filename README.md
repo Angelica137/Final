@@ -1,7 +1,7 @@
 # These are my solutions to some very important problems
 
-Problem 3
-0.0/10.0 points (graded)
+## Problem 3
+
 Numbers in Mandarin follow 3 simple rules.
 
 There are words for each of the digits from 0 to 10.
