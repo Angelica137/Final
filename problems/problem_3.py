@@ -3,4 +3,7 @@ trans = {'0': 'ling', '1': 'yi', '2': 'er', '3': 'san', '4': 'si',
 
 
 def convert_to_mandarin(us_num):
-    return us_num
+    for key in trans:
+        if key == us_num:
+            return trans[key]
+    return None
