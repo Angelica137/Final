@@ -8,4 +8,7 @@ def longest_run(L):
     Does not modify the list.
     Returns the sum of the longest run. 
     """
-    return L
+    for i in L:
+        if i + 1 >= i - 1:
+            return True
+    return None

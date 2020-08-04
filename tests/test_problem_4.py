@@ -8,4 +8,4 @@ If L = [5, 4, 10] then the longest run of monotonically increasing numbers in L 
 
 
 def test_longest_run_returns_list():
-    assert longest_run([1, 2, 3, 4]) == [1, 2, 3, 4]
+    assert longest_run([1, 2, 3, 4]) == True
