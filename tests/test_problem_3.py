@@ -13,6 +13,10 @@ def test_convert_to__mandarin_returns_translation_one_digit():
     assert convert_to_mandarin('9') == 'jiu'
 
 
+def test_convert_to__mandarin_returns_translation_get_length():
+    assert convert_to_mandarin('11') == 1
+
+
 def test_convert_to__mandarin_returns_translation_two_digits_11():
     assert convert_to_mandarin('11') == 'shi yi'
 
